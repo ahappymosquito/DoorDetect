@@ -32,11 +32,11 @@ while True:
     black_ratio = dark_color_pixels / total_pixels
 
     if black_ratio > 0.8:
-        # cv2.putText(frame, "Warning!", (roi_x, roi_y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
-        print("hello world")
-    # cv2.rectangle(frame, (roi_x, roi_y), (roi_x + roi_w, roi_y + roi_h), (0, 255, 0), 2)
-    # cv2.imshow("video", frame)
-    cv2.imshow("roi",roi_region)
+        cv2.putText(frame, "Warning!", (roi_x, roi_y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
+        # print("hello world")
+    cv2.rectangle(frame, (roi_x, roi_y), (roi_x + roi_w, roi_y + roi_h), (0, 255, 0), 2)
+    cv2.imshow("video", frame)
+    # cv2.imshow("roi",roi_region)
 
     c = cv2.waitKey(1)
     if c == 27:
