@@ -100,11 +100,12 @@ if __name__ == '__main__':
         print(key)
         if key == pynput.keyboard.Key.end:  # 结束程序 End 键
             return False
-        elif key == pynput.keyboard.Key.home:  # 移动鼠标 Home 键
-            # Logitech.keyboard.click('alt_l')
+        elif key == pynput.keyboard.Key.right:  # 移动鼠标 Home 键
+            Logitech.keyboard.click('8')
+
             # Logitech.keyboard.click('tab')
-            Logitech.mouse.move(-100, 400)
-            Logitech.mouse.scroll(5)
+            # Logitech.mouse.move(-100, 400)
+            # Logitech.mouse.scroll(5)
 
     with pynput.keyboard.Listener(on_release=release) as k:
         k.join()
