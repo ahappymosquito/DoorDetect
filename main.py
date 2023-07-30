@@ -41,7 +41,6 @@ while True:
         with control.pressed(keyboard.Key.alt_l , keyboard.Key.tab):
             pass
         break
-        # print("hello world")
     # cv2.rectangle(frame, (roi_x, roi_y), (roi_x + roi_w, roi_y + roi_h), (0, 255, 0), 2)
     # cv2.imshow("video", frame)
 

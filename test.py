@@ -57,8 +57,8 @@ class Logitech:
             x: 水平移动的方向和距离, 正数向右, 负数向左
             y: 垂直移动的方向和距离
             -------->
-            `
-            `
+            \
+            \
             v
             """
             if not ok:
@@ -101,7 +101,7 @@ if __name__ == '__main__':
         if key == pynput.keyboard.Key.end:  # 结束程序 End 键
             return False
         elif key == pynput.keyboard.Key.right:  # 移动鼠标 Home 键
-            Logitech.keyboard.click('8')
+            Logitech.keyboard.click(18)
 
             # Logitech.keyboard.click('tab')
             # Logitech.mouse.move(-100, 400)
